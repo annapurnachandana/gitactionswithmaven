@@ -30,6 +30,6 @@ jobs:
       with:
         image: annapurnatalluridocker/dem0-app
         registry: docker.io
-        username: annapurnatalluridocker
-        password: Qaz@190812
+        username: ${{ secrets.codespaces.DOCKER_USERNAME }}
+        password: ${{ secrets.codespaces.DOCKER_PASSWORD }}
          
