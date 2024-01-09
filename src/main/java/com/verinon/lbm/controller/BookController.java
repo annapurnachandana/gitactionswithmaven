@@ -47,7 +47,7 @@ public class BookController
         return "addbook";
     }
 
-    @PostMapping("/add-book")
+    @PostMapping("/add-book1")
     public String addBooks(ModelMap model,BookPojo book)
     {
 
