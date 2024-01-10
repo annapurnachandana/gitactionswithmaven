@@ -7,5 +7,5 @@ RUN mvn -B package --file pom.xml -DskipTests
 
 FROM openjdk:14-slim
 COPY --from=build /workspace/target/gitactionswithmaven-0.0.1-SNAPSHOT.jar app.jar
-EXPOSE 6379
+EXPOSE 8088
 ENTRYPOINT ["java","-jar","app.jar"]
